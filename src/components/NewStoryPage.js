@@ -18,7 +18,7 @@ export default function NewStoryPage() {
       contentPreview: `${newContent.substring(0, 20)}...`,
       content: newContent,
     };
-    const request = axios.post("http://localhost:4000/new-story", body);
+    const request = axios.post("http://localhost:4000/posts", body);
     request.then((res) => {
       console.log("Deu bom");
     });
