@@ -9,6 +9,7 @@ export default function HomePage() {
     const request = axios.get(`http://localhost:4000/posts`);
     request.then((resp) => {
       setPosts(resp.data);
+      console.log(resp.data);
     });
   }, []);
 
